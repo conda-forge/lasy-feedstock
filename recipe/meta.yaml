@@ -28,8 +28,10 @@ requirements:
 
 test:
   requires:
+    - matplotlib
     - python
     - pytest
+    - scikit-image
   source_files:
     - examples/
     - tests/
