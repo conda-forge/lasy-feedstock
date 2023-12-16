@@ -9,7 +9,7 @@ source:
   sha256: 83992dee8146036ba4eb4a97621e1dbdcb857c11b8901b2769a67bb81636015d
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -27,6 +27,14 @@ requirements:
     - scipy
 
 test:
+  requires:
+    - matplotlib
+    - python
+    - pytest
+    - scikit-image
+  source_files:
+    - examples/
+    - tests/
   imports:
     - lasy
 
