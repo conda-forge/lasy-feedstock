@@ -1,4 +1,4 @@
-{% set version = "0.4.0" %}
+{% set version = "0.5.0" %}
 
 package:
   name: lasy
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/LASY-org/lasy/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 83992dee8146036ba4eb4a97621e1dbdcb857c11b8901b2769a67bb81636015d
+  sha256: 923afc240648e809fe24bdfd9b84d7c4cee78286b766344d15f0804e4dce2f60
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
