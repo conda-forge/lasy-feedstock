@@ -9,27 +9,27 @@ source:
   sha256: 923afc240648e809fe24bdfd9b84d7c4cee78286b766344d15f0804e4dce2f60
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
     - setuptools
   run:
     - axiprop
     - numpy
     - openpmd-api
     - openpmd-viewer
-    - python >=3.7
+    - python >={{ python_min }}
     - scipy
 
 test:
   requires:
     - matplotlib
-    - python
+    - python {{ python_min }}
     - pytest
     - scikit-image
   source_files:
