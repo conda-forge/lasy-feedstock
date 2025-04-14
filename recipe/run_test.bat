@@ -1,7 +1,7 @@
 @echo on
 
 :: Python
-%PYTHON% examples\example_modal_decomposition_data.py
+%PYTHON% examples\example_gerchberg_saxton_algo.py
 if errorlevel 1 exit 1
 
 :: Python: pytest
