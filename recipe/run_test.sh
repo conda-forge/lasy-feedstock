@@ -3,7 +3,7 @@
 set -eu -x -o pipefail
 
 # Python
-$PYTHON examples/example_modal_decomposition_data.py
+$PYTHON examples/example_gerchberg_saxton_algo.py
 
 # Python: pytest
 $PYTHON -m pytest -s -vvvv tests/
