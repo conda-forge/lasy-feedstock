@@ -1,4 +1,4 @@
-{% set version = "0.6.1" %}
+{% set version = "0.7.0" %}
 
 package:
   name: lasy
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/LASY-org/lasy/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 52345a8cc82a636974f06e3c5543f6d173ebe3942ff0034d119c43782c23bc94
+  sha256: 854a33561f1ea538ebfff11034c7fad4c642342895d47e3f575b5df49c2ac4a8
 
 build:
   number: 0
